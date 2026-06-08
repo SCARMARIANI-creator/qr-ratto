@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>RAT VIRUS</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: #00ff66;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 💚 GLITCH VERDE */
+.glitch {
+  font-size: 65px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 60px;
+  color: #00ff66;
+  text-shadow:
+    0 0 10px #00ff66,
+    2px 0 #003300,
+    -2px 0 #00ffcc;
+  animation: flicker 1.2s infinite;
+}
+
+/* duplicato glitch */
+.glitch::before,
+.glitch::after {
+  content: "SEI STATO RATTIZZATO";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.glitch::before {
+  color: #00ffcc;
+  animation: glitchTop 0.9s infinite linear alternate-reverse;
+  top: -2px;
+}
+
+.glitch::after {
+  color: #00aa44;
+  animation: glitchBottom 1.1s infinite linear alternate-reverse;
+  top: 2px;
+}
+
+@keyframes glitchTop {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-3px,-2px); }
+  50% { transform: translate(-1px,1px); }
+  75% { transform: translate(-4px,0); }
+  100% { transform: translate(0,0); }
+}
+
+@keyframes glitchBottom {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(3px,2px); }
+  50% { transform: translate(1px,-1px); }
+  75% { transform: translate(4px,0); }
+  100% { transform: translate(0,0); }
+}
+
+/* effetto lampeggio */
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+h2 {
+  color: #00ff66;
+  margin-top: 20px;
+  animation: flicker 0.4s infinite;
+}
+
+img {
+  margin-top: 30px;
+  width: 320px;
+  border: 3px solid #00ff66;
+  box-shadow: 0 0 25px #00ff66;
+  filter: contrast(1.2);
+}
+
+p {
+  margin-top: 20px;
+  color: #00ff66;
+}
+</style>
+</head>
+
+<body>
+
+<div class="glitch">SEI STATO RATTIZZATO</div>
+
+<h2>SYSTEM: RAT VIRUS ACTIVE 🐀</h2>
+
+<img src="https://i.redd.it/s9pbokbksfrg1.gif">
+
+<p>Scar Mariani</p>
+
+</body>
+</html>
